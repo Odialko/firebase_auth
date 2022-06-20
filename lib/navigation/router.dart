@@ -20,7 +20,7 @@ class Router {
 //   final LoginState loginState;
 //   AppRouter(this.loginState);
   static const String title = 'GoRouter Example: Declarative Routes';
-  @override
+
   Widget build(BuildContext context) => MaterialApp.router(
     routeInformationParser: router.routeInformationParser,
     routerDelegate: router.routerDelegate,
