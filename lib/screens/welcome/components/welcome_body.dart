@@ -28,15 +28,14 @@ class WelcomeBody extends StatelessWidget {
             ),
             RoundedButton(
               label: 'Login',
-              onPress: () =>
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return const LoginScreen();
-                    },
-                  ),
+              onPress: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const LoginScreen();
+                  },
                 ),
+              ),
             ),
             const SizedBox(
               height: 12,
