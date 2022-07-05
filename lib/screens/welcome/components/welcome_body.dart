@@ -1,12 +1,11 @@
-import 'package:firebase_auth/navigation/routes.dart';
 import 'package:firebase_auth/resources/colors.dart';
 import 'package:firebase_auth/resources/images.dart';
 import 'package:firebase_auth/screens/components/rounded_button.dart';
+import 'package:firebase_auth/screens/login/login_screen.dart';
 import 'package:firebase_auth/screens/signup/signup_screen.dart';
 import 'package:firebase_auth/screens/welcome/components/welcome_body_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:go_router/go_router.dart';
 
 class WelcomeBody extends StatelessWidget {
   const WelcomeBody({Key? key}) : super(key: key);
@@ -14,6 +13,7 @@ class WelcomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    // final router = GoRouter.of(context);
 
     return WelcomeBodyBackground(
       child: SingleChildScrollView(
@@ -29,17 +29,14 @@ class WelcomeBody extends StatelessWidget {
             ),
             RoundedButton(
               label: 'Login',
-              onPress: () =>
-                context.goNamed(AppRoutes.login),
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) {
-                //       return const LoginScreen();
-                //     },
-                //   ),
-                // );
-              // },
+              onPress: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const LoginScreen();
+                  },
+                ),
+              ),
             ),
             const SizedBox(
               height: 12,
