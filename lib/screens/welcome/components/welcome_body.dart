@@ -13,6 +13,7 @@ class WelcomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    // final router = GoRouter.of(context);
 
     return WelcomeBodyBackground(
       child: SingleChildScrollView(
