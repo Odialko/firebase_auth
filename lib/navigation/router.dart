@@ -115,80 +115,80 @@
 // }
 
     // 6
-    routes: [
-      GoRoute(
-        name: AppRoutes.initialRoute,
-        path: AppRoutes.initialRoute,
-        builder: (_, state) => const WelcomeScreen(),
-      ),
-      GoRoute(
-        name: AppRoutes.login,
-        path: AppRoutes.login,
-        builder: (_, state) => const LoginScreen(),
-      ),
-
-      GoRoute(
-        name: AppRoutes.signUp,
-        path: AppRoutes.signUp,
-        builder: (_, state) => const SignUpScreen(),
-      ),
-      GoRoute(
-        name: AppRoutes.home,
-        path: AppRoutes.home,
-        builder: (_, state) => const HomeScreen(),
-        routes: [
-          GoRoute(
-            name: AppRoutes.shop,
-            path: AppRoutes.shop,
-            builder: (_, state) => const ShopScreen(),
-            routes: [
-              GoRoute(
-                name: AppRoutes.details,
-                path: AppRoutes.details,
-                builder: (_, state) => const DetailsScreen(),
-              ),
-            ],
-          ),
-          GoRoute(
-            name: AppRoutes.cart,
-            path: AppRoutes.cart,
-            builder: (_, state) => const CartScreen(),
-          ),
-          GoRoute(
-            name: AppRoutes.profile,
-            path: AppRoutes.profile,
-            builder: (_, state) => const ProfileScreen(),
-            routes: [
-              GoRoute(
-                name: AppRoutes.personalInfo,
-                path: AppRoutes.personalInfo,
-                builder: (_, state) => const PersonalInfoScreen(),
-              ),
-              GoRoute(
-                name: AppRoutes.payment,
-                path: AppRoutes.payment,
-                builder: (_, state) => const PaymentScreen(),
-              ),
-              GoRoute(
-                name: AppRoutes.signinInfo,
-                path: AppRoutes.signinInfo,
-                builder: (_, state) => const SigninInfoScreen(),
-              ),
-              GoRoute(
-                name: AppRoutes.moreInfo,
-                path: AppRoutes.moreInfo,
-                builder: (_, state) => const MoreScreen(),
-              ),
-            ],
-          ),
-        ],
-      ),
-
-    ],
-    errorPageBuilder: (context, state) => MaterialPage<void>(
-      key: state.pageKey,
-      child: ErrorPage(error: state.error.toString()),
-    ),
-    // TODO Add Redirect
-  );
-}
+//     routes: [
+//       GoRoute(
+//         name: AppRoutes.initialRoute,
+//         path: AppRoutes.initialRoute,
+//         builder: (_, state) => const WelcomeScreen(),
+//       ),
+//       GoRoute(
+//         name: AppRoutes.login,
+//         path: AppRoutes.login,
+//         builder: (_, state) => const LoginScreen(),
+//       ),
+//
+//       GoRoute(
+//         name: AppRoutes.signUp,
+//         path: AppRoutes.signUp,
+//         builder: (_, state) => const SignUpScreen(),
+//       ),
+//       GoRoute(
+//         name: AppRoutes.home,
+//         path: AppRoutes.home,
+//         builder: (_, state) => const HomeScreen(),
+//         routes: [
+//           GoRoute(
+//             name: AppRoutes.shop,
+//             path: AppRoutes.shop,
+//             builder: (_, state) => const ShopScreen(),
+//             routes: [
+//               GoRoute(
+//                 name: AppRoutes.details,
+//                 path: AppRoutes.details,
+//                 builder: (_, state) => const DetailsScreen(),
+//               ),
+//             ],
+//           ),
+//           GoRoute(
+//             name: AppRoutes.cart,
+//             path: AppRoutes.cart,
+//             builder: (_, state) => const CartScreen(),
+//           ),
+//           GoRoute(
+//             name: AppRoutes.profile,
+//             path: AppRoutes.profile,
+//             builder: (_, state) => const ProfileScreen(),
+//             routes: [
+//               GoRoute(
+//                 name: AppRoutes.personalInfo,
+//                 path: AppRoutes.personalInfo,
+//                 builder: (_, state) => const PersonalInfoScreen(),
+//               ),
+//               GoRoute(
+//                 name: AppRoutes.payment,
+//                 path: AppRoutes.payment,
+//                 builder: (_, state) => const PaymentScreen(),
+//               ),
+//               GoRoute(
+//                 name: AppRoutes.signinInfo,
+//                 path: AppRoutes.signinInfo,
+//                 builder: (_, state) => const SigninInfoScreen(),
+//               ),
+//               GoRoute(
+//                 name: AppRoutes.moreInfo,
+//                 path: AppRoutes.moreInfo,
+//                 builder: (_, state) => const MoreScreen(),
+//               ),
+//             ],
+//           ),
+//         ],
+//       ),
+//
+//     ],
+//     errorPageBuilder: (context, state) => MaterialPage<void>(
+//       key: state.pageKey,
+//       child: ErrorPage(error: state.error.toString()),
+//     ),
+//     // TODO Add Redirect
+//   );
+// }
